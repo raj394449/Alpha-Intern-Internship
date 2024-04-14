@@ -1,0 +1,145 @@
+.contanier {
+    width: 100%;
+    min-height: 100vh;
+    background: #969393;
+}
+
+.to-do {
+    width: 100%;
+    max-width: 540px;
+    background: #a8a6a6;
+    margin: 48px auto;
+    padding: 8px 36px 36px;
+    border-radius: 8px;
+}
+
+.to-do>h1 {
+    color: #c93685;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.to-do h1 img {
+    width: 40px;
+    margin-left: 16px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    padding-left: 16px;
+    margin-bottom: 25px;
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+}
+
+button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #ff5945;
+    color: #fff;
+}
+
+button:after {
+    content: " ";
+    width: 0%;
+    height: 100%;
+    background: #ffd401;
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+    right: 0;
+}
+
+button:hover::after {
+    right: auto;
+    left: 0;
+    width: 100%;
+}
+
+button span {
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    z-index: 20;
+    transition: all 0.5s ease-in-out;
+}
+
+button:hover span {
+    color: #183153;
+}
+
+ul{
+    display: flex;
+}
+
+ul li {
+    flex: 1;
+    list-style: none;
+    color: white;
+    position: relative;
+    font-size: 14px;
+    padding: 4px 48px 8px 40px;
+    cursor: pointer;
+
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    background-color: #fff;
+    border-radius: 50%;
+    background-position: center;
+    top: 0;
+    left: 0;
+}
+
+ul li.checked {
+    color: #ffffff;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url(./Assets/Images/check-mark.png);
+    background-size: cover;
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    font-size: 22px;
+    color: #000;
+    background: #fff;
+    text-align: center;
+}
+
+ul li span:hover {
+    background: #ffffff;
+}
