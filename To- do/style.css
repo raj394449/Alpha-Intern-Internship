@@ -90,17 +90,12 @@ button:hover span {
     color: #183153;
 }
 
-ul{
-    display: flex;
-}
-
 ul li {
-    flex: 1;
     list-style: none;
     color: white;
     position: relative;
     font-size: 14px;
-    padding: 4px 48px 8px 40px;
+    padding: 8px 48px 12px 40px;
     cursor: pointer;
 
 }
